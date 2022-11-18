@@ -1,0 +1,225 @@
+$mainBackground: #202020;
+$secondBackground: #383838;
+$thirdBackground: #553d67;
+$buttons: #ffffff;
+$mainText: #52e252;
+$etc: black;
+$mainFont: 'IBM Plex Mono', monospace;
+$secondFont: 'Montserrat', sans-serif;
+
+.wrapper {
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url(../images/bckgrnd.png);
+  background-position: center;
+  color: $mainText;
+  font-family: $mainFont;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+  .toMainPageButton {
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right, rgba(163, 163, 163, 0.178), black);
+    writing-mode: vertical-rl;
+    text-align: center;
+    text-decoration: none;
+    color: $mainText;
+    button {
+      width: 100%;
+      height: 100%;
+      color: $mainText;
+      background: none;
+      border: 0px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
+  .toMainPageButton:hover {
+    background: linear-gradient(to right, rgba(207, 207, 207, 0.178), black);
+  }
+  .container {
+    width: 96%;
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .titleBlock {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          width: 100%;
+          min-height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-size: 30px;
+          font-weight: 400;
+          .underTitle {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            font-size: 12px;
+            font-weight: 400;
+            .date {
+              display: flex;
+              justify-content: center;
+              padding: 5px;
+            }
+            .author {
+              display: flex;
+              justify-content: center;
+              padding: 5px;
+            }
+          }
+        }
+      }
+      .url {
+        width: 85%;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 17px;
+        font-weight: 300;
+        .urlRef {
+          text-decoration: none;
+          color: $mainText;
+        }
+      }
+      .url:hover {
+        text-decoration: underline;
+      }
+      .text {
+        width: 85%;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        align-self: center;
+        background-color: rgba(0, 0, 0, 0.493);
+        font-size: 17px;
+        font-weight: 300;
+      }
+      .wrapperCommentsArea {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .commentsArea {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          .writeComment {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            span {
+              display: flex;
+              justify-self: flex-start;
+              align-self: flex-start;
+              font-size: 15px;
+              font-weight: 300;
+              margin-bottom: 10px;
+            }
+            textarea {
+              width: 100%;
+              height: 100px;
+              background: $etc;
+              color: $mainText;
+              font-size: 14px;
+              font-weight: 100;
+              border-color: $mainText;
+              border-radius: 4px;
+              padding: 10px 0 0 10px;
+              outline: none;
+            }
+            .textarea:active {
+              border-color: $mainText;
+              outline: none;
+            }
+            .textarea:focus {
+              outline: none;
+            }
+            .submit {
+              width: 150px;
+              height: 30px;
+              align-self: flex-end;
+              background-color: $mainBackground;
+              color: $buttons;
+              font-family: $secondFont;
+              font-size: 14px;
+              border: 0px;
+              border-bottom: 2px solid $mainText;
+              border-radius: 10px;
+              margin-top: 10px;
+            }
+            .submit:hover {
+              background-color: $secondBackground;
+              cursor: pointer;
+            }
+            .submit:active {
+              border: 0px;
+            }
+          }
+          .commentBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            .comment {
+              width: 90%;
+              padding: 10px;
+              font-size: 15px;
+              .innerComment {
+                width: 100%;
+                position: relative;
+                left: 20px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/background_gif.gif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loadingText {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $secondFont;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,46 @@
+$mainBackground: #202020;
+$secondBackground: #383838;
+$thirdBackground: #553d67;
+$buttons: #4dff4d;
+$mainText: white;
+$etc: green;
+$mainFont: 'IBM Plex Mono', monospace;
+$secondFont: 'Poppins', sans-serif;
+
+.footer {
+  height: 184px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $mainBackground;
+  font-family: $secondFont;
+  color: $mainText;
+  .centerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    div {
+      text-shadow: 3px 0 3px #000, 0 3px 3px #000, -3px 0 3px #000, 0 -3px 3px #000;
+      margin: 0 10px 0 10px;
+      cursor: pointer;
+    }
+    div:hover {
+      color: $buttons;
+    }
+  }
+  .centerText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: $mainFont;
+  }
+  hr {
+    height: 1px;
+    width: 600px;
+    background-color: $etc;
+    border-color: $etc;
+  }
+}

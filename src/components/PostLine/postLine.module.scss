@@ -1,0 +1,72 @@
+$mainBackground: #20202080;
+$secondBackground: #38383859;
+$thirdBackground: #553d67;
+$buttons: #0f5a00;
+$mainText: #4dff4d;
+$etc: black;
+$mainFont: 'IBM Plex Mono', monospace;
+$secondFont: 'Poppins', sans-serif;
+
+.story {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: $mainBackground;
+  color: $mainText;
+  font-family: $mainFont;
+  font-size: 16px;
+  text-decoration: none;
+  .by {
+    width: 25%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 10px 0 10px #000, 0 10px 10px #000, -10px 0 10px #000, 0 -10px 10px #000;
+    background-color: $mainBackground;
+  }
+  .title {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 10px 0 10px #000, 0 10px 10px #000, -10px 0 10px #000, 0 -10px 10px #000;
+    background-color: $mainBackground;
+  }
+  .time {
+    width: 12.5%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 10px 0 10px #000, 0 10px 10px #000, -10px 0 10px #000, 0 -10px 10px #000;
+    background-color: $mainBackground;
+    border-left: 0px;
+  }
+  .score {
+    width: 12.5%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 10px 0 10px #000, 0 10px 10px #000, -10px 0 10px #000, 0 -10px 10px #000;
+    background-color: $mainBackground;
+    font-size: 20px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  div:hover {
+    background-color: $secondBackground;
+  }
+}
+.story:hover {
+  cursor: pointer;
+  background-color: $secondBackground;
+}
+.story:active {
+  background-color: $etc;
+}

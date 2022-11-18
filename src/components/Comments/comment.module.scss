@@ -1,0 +1,72 @@
+$mainBackground: #202020;
+$secondBackground: #383838;
+$thirdBackground: #553d67;
+$buttons: #ffffff;
+$mainText: #52e252;
+$etc: #99738e;
+$mainFont: 'IBM Plex Mono', monospace;
+$secondFont: 'Poppins', sans-serif;
+
+.commentBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .comment {
+    width: 90%;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    span:hover {
+      text-decoration: underline;
+    }
+    .noInner {
+      font-size: 14px;
+      margin: 30px;
+    }
+    .noInner:hover {
+      text-decoration: underline;
+    }
+    .innerComment {
+      width: 100%;
+      font-size: 14px;
+      margin: 30px;
+    }
+  }
+  .innerComment:hover {
+    text-decoration: underline;
+  }
+  .overallAndRefresh {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    .overall {
+      width: 50%;
+    }
+    .refresh {
+      width: 20%;
+      height: 28px;
+      font-family: $secondFont;
+      color: white;
+      cursor: pointer;
+      background-color: $secondBackground;
+      border-radius: 10px;
+      padding-left: 10px;
+      border-bottom: 2px solid $mainText;
+    }
+    .refresh:active {
+      border: 0px;
+    }
+  }
+  .loadingComments {
+    margin: 20px;
+  }
+  .noComments {
+    margin: 20px;
+  }
+}
